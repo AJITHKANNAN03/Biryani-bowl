@@ -1,0 +1,643 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    cursor:pointer;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+/* navigation bar design start */
+.nav{
+    display:flex;
+    justify-content: space-between;
+    box-shadow:0 0 10px burlywood;
+    padding:20px;
+    height:80px;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    width:100%;
+    background-color: rgb(243, 243, 243);
+}
+/* logo design */
+.logo{
+   width:100px;
+   height:50px;
+   padding-left:20px;
+}
+/* navigation links design */  
+.nav-links a{
+    font-size:30px;
+    font-weight:bold;
+    margin-left:20px;
+    padding:10px;
+    color:lightseagreen;
+}
+/* nav-links hover design */
+.nav-links a:hover{
+    border-radius:10px;
+    color:beige;
+    background-color: lightseagreen;
+}
+/* cart icons design */
+.cart-icons i{
+    font-size:20px;
+    padding:10px;
+    color:lightseagreen;
+    background-color: #eee;
+    border-radius:50%;
+    margin-left:5px;  
+}
+.cart-icons i:hover{
+    color:white;
+    background-color: lightseagreen;
+    transition: transform  0.9s;
+    transform: rotate(360deg);
+}
+#bar{
+    display:none;
+}
+#check{
+display:none;
+}
+/* navigationa bar design end */
+
+/* home page design start here */
+#home{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom:30px;
+    margin-top:100px;
+}
+.home-content{
+    margin:250px 200px 0px 0px;
+}
+.home-content h3{
+    color:lightseagreen;
+    font-size:30px;
+    padding:10px 0px 10px 0px;
+}
+.home-content h1{
+    color:crimson;
+    font-size:50px;
+}
+.home-content p{
+    color:crimson;
+    font-size:20px;
+    padding:20px 0px 20px 0px;
+}
+.btn1{
+    color:white;
+    background-color: crimson;
+    font-size:20px;
+    padding:10px;
+    border-radius:10px;
+}
+.btn1:hover{
+    background-color: lightseagreen;
+    letter-spacing:1px;
+}
+#home img{
+    margin-top:80px;
+    width:450px;
+    height:450px;
+}
+/* popular card deigns start */
+#popular,#menu{
+    font-size:40px;
+    font-weight:bold;
+    text-align:center;
+    margin-top:60px;
+    color:crimson;
+}
+.popular-card{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin:20px;
+}
+.card{
+    width:350px;
+    margin-top:10px;
+    color:lightseagreen;
+    font-size:20px;
+    box-shadow: 0 0 20px silver;
+    text-align:center;
+}
+.heart{
+    text-align:right;
+}
+.fa-heart{
+    font-size:20px;
+    padding:10px;
+    margin:10px;
+    color:lightseagreen;
+    background-color: #eee;
+    border-radius:50%;
+}
+.fa-heart:hover{
+    color:white;
+    background-color: lightseagreen;
+    transition: transform  0.9s;
+    transform: rotate(360deg);
+}
+.card img{
+    width:250px;
+    height:250px;
+    padding:0px 30px 0px 30px;  
+}
+.card h3{
+    padding-bottom:10px;
+}
+.card div span{
+font-size:30px;
+color:crimson;
+}
+.card div .btn1{
+    margin:15px;
+}
+/* popular dishesh page design end */
+
+/* about page design start */
+#about h3,#review h3,#contact h3{
+    color:lightseagreen;
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+    padding:10px;
+}
+#about h1,#review h1,#contact h1{
+    color:crimson;
+    font-weight:bold;
+    font-size:30px;
+    text-align:center;
+    padding-bottom:10px;
+}
+.about-box{
+    display:flex;
+    flex-wrap:wrap;
+}
+.about-box img{
+    width:400px;
+    height:400px;
+    padding-right:10px;
+}
+.about-content{
+    margin:20px 130px 0px 130px;
+ text-align: justify;   
+}
+.about-content p{
+    padding:20px;
+    color:royalblue;
+    font-size:20px;
+    line-height:2;
+}
+.about-content button{
+    font-size:20px;
+    font-weight:bold;
+    padding:10px;
+    border: 2px solid crimson;
+    border-radius:10px;
+    margin:10px;
+    background-color: wheat;
+}
+.about-content i{
+    color:lightseagreen;
+    padding:10px;
+}
+/* review page design end here */
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+
+}
+.review-card{
+    width:300px;
+    margin:20px;
+    padding:20px;
+    box-shadow: 0px 0px 5px 5px lightgray;
+}
+.review-float{
+    display:flex;
+}
+
+.review-float div h4{
+    color:crimson;
+    font-size:20px;
+    padding:30px 0px 5px 20px;
+}
+.review-float div i{
+    color:lightseagreen;
+    font-size:10px;
+    padding:5px 0px 5px 15px;
+}
+.review-card p{
+    color:blueviolet;
+    font-size:15px;
+    text-align: justify;
+    line-height: 2;
+}
+.review-float img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+/* form design start here */
+.form-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+#contact{
+    margin:auto;
+    padding:40px;
+    width:80%;
+    background-color: lavender;
+    box-shadow: 0px 0px 10px 10px beige;
+    border-radius: 10px;
+}
+.form1{
+    margin:0px 0px 0px 20px;
+}
+.form2{
+    margin:0px 0px 0px 50px;
+}
+form input{
+    width:450px;
+    height:40px;
+    padding:10px;
+    border:2px solid black;
+    border-radius:10px;
+}
+.course input{
+    height:15px;
+    width:15px;
+}
+.course label{
+    font-size:15px;
+    padding:5px;
+    color:lightseagreen
+}
+textarea{
+    width:450px;
+    height:100px;
+    padding:10px;
+    border:2px solid black;
+    margin-bottom:10px;
+    border-radius:10px;
+
+}
+form label{
+    font-size:20px;
+    font-weight:bold;
+    color:crimson;
+    line-height: 2;
+}
+/* form design end */
+/* footer design start here */
+.footer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width:100%;
+    background-color:beige;
+    margin-top:30px;
+}
+.footer h1{
+    color:crimson;
+font-weight:bold;
+padding:20px 0px 20px 0px;
+}
+.location iframe{
+    padding:0px 20px 20px 0px;
+    width:250px;
+    height:250px;
+}
+.phone{
+    padding-bottom:20px;
+}
+.links a{
+    font-size:20px;
+    padding:0px 0px 0px 40px;
+    line-height: 2;
+}
+@media all and (min-width:320px) and (max-width:600px){
+    /* responsive navigation design start here for mobile devices*/
+    /* nav links div design to responsive */
+    .logo{
+        padding-left:1px;
+    }
+    .nav-links{
+        position:absolute;
+        left:-100%;
+        top:80px;
+        width:100%;
+        height:70vh;
+        display:flex;
+        flex-direction:column;
+        justify-items:center;
+        transition:all 2s;
+        background-color: wheat;
+    }  
+    .nav-links a{
+        background-color: white;
+        box-shadow: 0 0 10px white;
+        font-size:25px;
+        margin:10px;
+        border-radius:20px;
+        text-align:center;
+        color:crimson;
+    } 
+    #check:checked ~ .nav-links {
+        left:0%;
+    }
+    #bar{
+        display:block;
+    position:absolute;
+    right:130px;
+    margin:10px 10px 0px 0px;
+    } 
+    
+}
+/* navigation bar design end here */
+/* home page design start here */
+.home-content{
+    margin:20px 0px 0px 20px;
+}
+.home-content h3{
+    font-size:20px;
+    padding:10px 0px 20px 0px;
+}
+.home-content h1{
+    font-size:30px;
+}
+.home-content p{
+    font-size:15px;
+    padding:20px 0px 20px 0px;
+}
+
+#home img{
+    margin:30px 0px 0px 0px;
+    width:200px;
+    height:200px;
+}
+/* home page desing end here */
+#popular{
+    font-size:30px;
+}
+/* about page design start here */
+#about{
+    margin:40px;
+}
+#about h3{
+    color:lightseagreen;
+    font-weight:bold;
+    font-size:30px;
+    text-align:center;
+    padding:10px;
+}
+#about h1{
+    color:crimson;
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+    padding-bottom:10px;
+}
+.about-box img{
+    width:200px;
+    height:200px;
+}
+.about-content p{
+    text-indent:50px;
+}
+.about-content button{
+    font-size:15px;
+    width:200px;
+    font-weight:bold;
+    padding:10px;
+    border-radius:10px;
+    margin:10px;
+    background-color: wheat;
+}
+/* about page */
+.about-content{
+    margin:20px 10px 0px 10px;
+ text-align: justify;   
+}
+/* about page end here */
+/* form design start here */
+.form1{
+    margin:0px 0px 10px 0px;
+}
+.form2{
+    margin:0px 0px 10px 0px;
+}
+form input{
+    width:200px;
+    height:20px;
+    padding:10px;
+    border:2px solid black;
+}
+textarea{
+    width:200px;
+    height:50px;
+    padding:10px;
+    border:2px solid black;
+    margin-bottom:10px;
+}
+form label{
+    font-size:20px;
+    font-weight:bold;
+    color:crimson;
+    line-height: 2;
+}
+.links h1{
+    margin-left:-60px;
+}
+.links a{
+    margin-left:-40px;
+}
+
+/* form design end here */
+/* footer design start here */
+/* responsive navigation design start here for tab devices*/
+@media all and (min-width:600px) and (max-width:900px){
+    /* nav links div design to responsive */
+    
+    .nav-links{
+        position:absolute;
+        left:-100%;
+        top:80px;
+        width:100%;
+        height:70vh;
+        display:flex;
+        flex-direction:column;
+        justify-items:center;
+        transition:all 2s;
+        background-color: wheat;
+    }  
+    .nav-links a{
+        color:crimson;
+        background-color: white;
+        box-shadow: 0 0 10px white;
+        font-size:25px;
+        margin:10px;
+        border-radius:20px;
+        text-align:center;
+    } 
+    .cart-icons i{
+        font-size:20px;
+    }
+    #check:checked ~ .nav-links {
+        left:0%;
+    }
+    #bar{
+        display:block;
+    position:absolute;
+    right:130px;
+    margin:10px 10px 0px 0px;
+    } 
+    /* navigation bar desin end here */
+
+    /* home page design start here */
+
+    .home-content{
+     margin-top:100px; 
+    }
+        .home-content h3{
+            color:lightseagreen;
+            font-size:30px;
+            padding:10px 0px 10px 0px;
+        }
+        .home-content h1{
+            color:crimson;
+            font-size:50px;
+        }
+        .home-content p{
+            color:crimson;
+            font-size:20px;
+            padding:20px 0px 20px 0px;
+        }
+    #home img{
+        margin:70px 0px 0px 40px;
+        width:250px;
+        height:300px;
+    }
+    .about-box{
+        justify-content: center;
+    }
+    /* navigation bar design end here */
+    /* popular page design */
+    /* form design start */
+    .form1{
+        margin:0px 0px 0px 20px;
+    }
+    .form2{
+        margin:0px 0px 0px 20px;
+    }
+    form input{
+        width:450px;
+        height:40px;
+        padding:10px;
+        border:2px solid black;
+    }
+    textarea{
+        width:450px;
+        height:100px;
+        padding:10px;
+        border:2px solid black;
+        margin-bottom:10px;
+    }
+    form label{
+        font-size:20px;
+        font-weight:bold;
+        color:crimson;
+        line-height: 2;
+    }
+    /* form design end here */
+}
+
+
+
+@media all and (min-width:900px) and (max-width:1400px){
+    /* home page design start */
+    .home-content{
+        margin:250px 200px 0px 0px;
+    }
+    .home-content h3{
+        color:lightseagreen;
+        font-size:30px;
+        padding:10px 0px 10px 0px;
+    }
+    .home-content h1{
+        color:crimson;
+        font-size:50px;
+    }
+    .home-content p{
+        color:crimson;
+        font-size:20px;
+        padding:20px 0px 20px 0px;
+    }
+    .btn1{
+        color:white;
+        background-color: crimson;
+        font-size:20px;
+        padding:10px;
+        border-radius:10px;
+    }
+    .btn1:hover{
+        background-color: lightseagreen;
+        letter-spacing:1px;
+    }
+    #home img{
+        margin-top:80px;
+        width:450px;
+        height:450px;
+    }
+    /* about page design */
+    .about-box img{
+        width:300px;
+        height:300px;
+    }
+    .about-box{
+        flex-wrap:nowrap;
+    }
+    /* form design */
+    .form-container{
+        flex-wrap:nowrap;
+        width:90%;
+    }
+    .form1{
+        margin:0px 0px 0px 20px;
+    }
+    .form2{
+        margin:0px 0px 0px 50px;
+    }
+    form input{
+        width:450px;
+        height:40px;
+        padding:10px;
+        border:2px solid black;
+    }
+    textarea{
+        width:450px;
+        height:60px;
+        padding:10px;
+        margin-right:20px;
+        border:2px solid black;
+        margin-bottom:10px;
+    }
+    form label{
+        font-size:20px;
+        font-weight:bold;
+        color:crimson;
+        line-height: 2;
+    }
+
+}
